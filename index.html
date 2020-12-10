@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <div id="clock" class="bg">
+      <div id="digital">
+        <h1 id="digital-time">12:12:12</h1>
+      </div>
+      <div id="hr"></div>
+      <div id="min"></div>
+      <div id="sec"></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="other-watch">
+      <div id="stopwatch">
+        <div id="stopwatch_hand"></div>
+        <div id="counter">
+          <h1 id="counter-time">0:0:0</h1>
+        </div>
+      </div>
+      <div class="btn">
+        <button id="startbutton" onclick="start()">Start</button>
+        <button id="stopbutton" onclick="stop()">Stop</button>
+        <button id="resetbutton" onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <script src="./clock.js"></script>
+  </body>
+</html>

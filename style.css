@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* background: #000; */
+}
+
+#clock {
+  position: relative;
+  margin: auto;
+  background: url(./clock2.png) no-repeat;
+  width: 50vw;
+  height: 50vw;
+  /* width: 500px;
+  height: 500px; */
+  background-size: contain;
+}
+
+#stopwatch {
+  position: relative;
+  margin: auto;
+  background: url(./clock.png) no-repeat;
+  width: 20vw;
+  height: 20vw;
+  /* width: 500px;
+  height: 500px; */
+  background-size: contain;
+}
+
+.other-watch {
+  justify-content: center;
+  text-align: center;
+}
+
+.btn {
+  margin: 20px;
+  justify-content: center;
+  left: 10%;
+}
+
+.btn button {
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 12vw;
+}
+
+#hr,
+#min,
+#sec {
+  position: absolute;
+  transform-origin: bottom;
+}
+
+#hr {
+  background-color: black;
+  /* background-color: yellowgreen; */
+  height: 23%;
+  width: 2.5%;
+  top: 26.98%;
+  left: 48.6%;
+  opacity: 0.8;
+  border-radius: 5px;
+  /* display: none; */
+}
+#min {
+  background-color: black;
+  height: 32%;
+  width: 1.5%;
+  top: 18.02%;
+  left: 49.07%;
+  opacity: 0.8;
+  border-radius: 3px;
+  /* display: none; */
+}
+#sec {
+  border-radius: 20vw;
+  background-color: red;
+  height: 42%;
+  width: 1.5%;
+  top: 8%;
+  left: 49.1%;
+  opacity: 0.8;
+  /* display: none; */
+}
+
+#digital {
+  position: absolute;
+  border-radius: 1vw;
+  transform-origin: bottom;
+  background: grey;
+  height: 17%;
+  width: 42%;
+  top: 63.02%;
+  left: 28.9%;
+  opacity: 0.8;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#digital h1 {
+  padding-top: 1.4vw;
+  font-size: 5em;
+}
+
+#stopwatch_hand {
+  position: absolute;
+  border-radius: 20vw;
+  transform-origin: bottom;
+  background-color: red;
+  height: 42%;
+  width: 1.5%;
+  top: 8%;
+  left: 49.1%;
+  opacity: 0.8;
+}
+#counter{
+  position: absolute;
+  border-radius: 1vw;
+  transform-origin: bottom;
+  background: grey;
+  height: 17%;
+  width: 42%;
+  top: 63.02%;
+  left: 28.699%;
+  opacity: 0.8;
+  
+}
+#counter h1{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 0.85vw;
+  font-size: 1.4em;
+}
