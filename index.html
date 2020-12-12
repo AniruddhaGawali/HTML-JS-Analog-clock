@@ -10,32 +10,54 @@
     <link rel="stylesheet" href="./css/utils.css" />
     <link rel="stylesheet" href="./css/clock.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
-    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/Time_Management-512.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/Time_Management-512.png"
+      type="image/x-icon"
+    />
 
     <script src="./js/utils.js"></script>
     <script src="./js/clock.js"></script>
     <title>AKG Clock</title>
   </head>
   <body>
-
     <nav class="nav">
       <div class="main-navbar">
         <div class="home">
           <a href="./index.html">
-            <img src="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/Time_Management-512.png" alt="LOGO">
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/Time_Management-512.png"
+              alt="LOGO"
+            />
           </a>
           <a href="./index.html"><h1>AKG CLOCK</h1></a>
         </div>
         <div class="menu">
-          <img src="https://i.ibb.co/zrK9B08/theme-d.png" alt="Theme" onclick="theme()" id="theme">
-          <img src="https://i.ibb.co/6sfZNJR/list-d.png" alt="Menu" onclick="menu()" id="menu-icon">
+          <img
+            src="https://i.ibb.co/zrK9B08/theme-d.png"
+            alt="Theme"
+            onclick="theme()"
+            id="theme"
+          />
+          <img
+            src="https://i.ibb.co/6sfZNJR/list-d.png"
+            alt="Menu"
+            onclick="menu()"
+            id="menu-icon"
+          />
         </div>
       </div>
       <div id="menu-list">
         <ul>
-          <li><a href="#"><b> Menu1 </b></a></li>
-          <li><a href="#"><b> Menu1 </b></a></li>
-          <li><a href="#"><b> Menu1 </b></a></li>
+          <li>
+            <a href="#"><b> Menu1 </b></a>
+          </li>
+          <li>
+            <a href="#"><b> Menu1 </b></a>
+          </li>
+          <li>
+            <a href="#"><b> Menu1 </b></a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -59,32 +81,14 @@
         <br />
         <div class="temp">
           <div class="timezone">
-              <div class="timezone-items">
-                <div class="timezone-clock"  id="tz-c1">
-                  <div class="tz_hr"></div>
-                  <div class="tz_min"></div>
-                  <div class="tz_sec"></div>
-                </div>
-              </div>
-            
-              <div class="timezone-items">
-                <div class="time-zone-time">
-                  <h3 class="tz_name">Name</h3>
-                  <h3 class="tz_digital">00:00:00</h3>
-                </div>
-                </div>
-              </div>
-          </div>
-          <div class="hr_2"></div>
-          <div class="timezone">
             <div class="timezone-items">
-              <div class="timezone-clock" id="tz-c2">
+              <div class="timezone-clock" id="tz-c1">
                 <div class="tz_hr"></div>
                 <div class="tz_min"></div>
                 <div class="tz_sec"></div>
               </div>
             </div>
-            
+
             <div class="timezone-items">
               <div class="time-zone-time">
                 <h3 class="tz_name">Name</h3>
@@ -92,54 +96,42 @@
               </div>
             </div>
           </div>
-          <div class="hr_2"></div>
-          <div class="timezone">
-            <div class="timezone-items">
-              <div class="timezone-clock" id="tz-c3">
-                <div class="tz_hr"></div>
-                <div class="tz_min"></div>
-                <div class="tz_sec"></div>
-              </div>
+        </div>
+        <div class="hr_2"></div>
+        <div class="timezone">
+          <div class="timezone-items">
+            <div class="timezone-clock" id="tz-c2">
+              <div class="tz_hr"></div>
+              <div class="tz_min"></div>
+              <div class="tz_sec"></div>
             </div>
-            
-            <div class="timezone-items">
-              <div class="time-zone-time">
-                <h3 class="tz_name">Name</h3>
-                <h3 class="tz_digital">00:00:00</h3>
-              </div>
+          </div>
+
+          <div class="timezone-items">
+            <div class="time-zone-time">
+              <h3 class="tz_name">Name</h3>
+              <h3 class="tz_digital">00:00:00</h3>
+            </div>
+          </div>
+        </div>
+        <div class="hr_2"></div>
+        <div class="timezone">
+          <div class="timezone-items">
+            <div class="timezone-clock" id="tz-c3">
+              <div class="tz_hr"></div>
+              <div class="tz_min"></div>
+              <div class="tz_sec"></div>
+            </div>
+          </div>
+
+          <div class="timezone-items">
+            <div class="time-zone-time">
+              <h3 class="tz_name">Name</h3>
+              <h3 class="tz_digital">00:00:00</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      flaticons
-    </footer>
   </body>
 </html>
-
-<!-- <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <hr />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <div class="other-watch">
-      <div id="stopwatch">
-        <div id="stopwatch_hand"></div>
-        <div id="counter">
-          <h1 id="counter-time">0:0:0</h1>
-        </div>
-      </div>
-      <div class="btn">
-        <button id="startbutton" onclick="start()">Start</button>
-        <button id="stopbutton" onclick="stop()">Stop</button>
-        <button id="resetbutton" onclick="reset()">Reset</button>
-      </div>
-    </div> -->
