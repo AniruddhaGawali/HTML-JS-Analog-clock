@@ -66,22 +66,23 @@ body {
   text-align: center;
 }
 .home h1{
-  margin-top: 5px;
+  margin-top: 3px;
   font-family: var(--title);
   color: var(--main-bg2);
 }
 .home img{
-  width: 3vw;
+  width: 32px;
   background-color: white ;
   border-radius: 10px;
   margin: 5px;
 }
 #theme {
-  width: 2.2vw;
+  width: 26px;
+  margin-bottom: 1.3px;
 }
 
 #menu-icon {
-  width: 2.5vw;
+  width: 30px;
 }
 
 #menu-list {
