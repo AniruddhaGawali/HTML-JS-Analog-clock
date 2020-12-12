@@ -18,8 +18,8 @@ function theme() {
     document.getElementById("tz-c2").className = "timezone-clock_dark";
     document.getElementById("tz-c3").className = "timezone-clock_dark";
 
-    document.getElementById("theme").src="./img/theme_l.png"
-    document.getElementById("menu-icon").src="../img/list_l.png"
+    document.getElementById("theme").src="https://i.ibb.co/QFpDYhr/theme-l.png"
+    document.getElementById("menu-icon").src="https://i.ibb.co/Nrj2xtD/list-l.png"
   } else {
     theme_no = 0;
     document.documentElement.style.setProperty("--main-bg", "white");
@@ -30,8 +30,8 @@ function theme() {
     document.getElementById("tz-c2").className = "timezone-clock";
     document.getElementById("tz-c3").className = "timezone-clock";
     
-    document.getElementById("theme").src="../img/theme_d.png"
-    document.getElementById("menu-icon").src="../img/list_d.png"
+    document.getElementById("theme").src="https://i.ibb.co/zrK9B08/theme-d.png"
+    document.getElementById("menu-icon").src="https://i.ibb.co/6sfZNJR/list-d.png"
 
     // root.style.setProperty("--main-bg","white")
   }

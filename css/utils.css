@@ -51,6 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 5px;
 }
 
 .menu img {
@@ -76,9 +77,8 @@ body {
   margin: 5px;
 }
 #theme {
-  width: 2.5vw;
+  width: 2.2vw;
 }
-
 
 #menu-icon {
   width: 2.5vw;
