@@ -1,0 +1,24 @@
+@media screen and (max-width: 900px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .clock-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;: ; */
+  }
+  #digital h1 {
+    padding-top: 30px;
+    font-size: 3.5em;
+    font-family: var(--num-digits);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #digital h1 {
+    padding-top: 20px;
+    font-size: 2.5em;
+    font-family: var(--num-digits);
+  }
+}
