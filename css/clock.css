@@ -88,20 +88,6 @@
   font-size: 1.8em;
   font-family: var(--general);
 }
-.hr_{
-   border: 2.5px solid var(--main-bg);
-   background: var(--main-bg);
-   width: 80%;
-   margin: auto;
-
-}
-.hr_2{
-   border: 1.3px solid var(--main-bg);
-   background: var(--main-bg);
-   width: 60%;
-   margin: auto;
-
-}
 
 
 .timezone{

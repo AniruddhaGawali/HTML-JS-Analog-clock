@@ -165,3 +165,18 @@ body {
   padding-top: 0.85vw;
   font-size: 1.4em;
 }
+
+.hr_ {
+  border: 2.5px solid var(--main-bg);
+  background: var(--main-bg);
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+}
+.hr_2 {
+  border: 1.3px solid var(--main-bg);
+  background: var(--main-bg);
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+}
