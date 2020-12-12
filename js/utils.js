@@ -18,7 +18,7 @@ function theme() {
     document.getElementById("tz-c2").className = "timezone-clock_dark";
     document.getElementById("tz-c3").className = "timezone-clock_dark";
 
-    document.getElementById("theme").src="../img/theme_l.png"
+    document.getElementById("theme").src="https://github.com/AniruddhaGawali/HTML-JS-Analog-clock/blob/master/img/list_l.png"
     document.getElementById("menu-icon").src="../img/list_l.png"
   } else {
     theme_no = 0;
