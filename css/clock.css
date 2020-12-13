@@ -1,4 +1,3 @@
-
 .clock-content {
   display: flex;
   /* justify-content: center;: ; */
@@ -73,7 +72,6 @@
 #digital {
   justify-content: center;
   text-align: center;
-
 }
 
 #digital h1:first-child {
@@ -89,8 +87,7 @@
   font-family: var(--general);
 }
 
-
-.timezone{
+.timezone {
   display: flex;
   flex-direction: row;
   /* justify-content: center; */
@@ -101,12 +98,12 @@
   /* margin: 0 10px; */
 }
 
-.timezone-items{
+.timezone-items {
   margin: 0 25px;
-  justify-content:center ;
+  justify-content: center;
   /* background: red; */
 }
-.timezone-clock{
+.timezone-clock {
   position: relative;
   margin: 10px 0px;
   background: url(../img/clock_w2.png) no-repeat;
@@ -116,7 +113,7 @@
   height: 100px;
   background-size: contain;
 }
-.timezone-clock_dark{
+.timezone-clock_dark {
   position: relative;
   margin: 10px 0px;
   background: url(../img/clock2.png) no-repeat;
@@ -127,13 +124,14 @@
   background-size: contain;
 }
 
-.tz_hr,.tz_min,.tz_sec{
+.tz_hr,
+.tz_min,
+.tz_sec {
   position: absolute;
   transform-origin: bottom;
 }
 
-
-.tz_hr{
+.tz_hr {
   background-color: var(--main-bg);
   height: 24%;
   width: 2.5%;
@@ -144,7 +142,7 @@
   /* display: none; */
 }
 
-.tz_min{
+.tz_min {
   background-color: var(--main-bg);
   height: 29%;
   width: 1.5%;
@@ -154,7 +152,7 @@
   border-radius: 3px;
 }
 
-.tz_sec{
+.tz_sec {
   background-color: var(--main-bg);
   height: 39%;
   width: 1.5%;
@@ -163,17 +161,16 @@
   opacity: 0.8;
   border-radius: 3px;
   /* display: none; */
-  
 }
 
-.time-zone-time{
+.time-zone-time {
   padding: 37px 0;
   justify-content: center;
   text-align: center;
   font-family: var(--general);
   color: var(--main-bg);
 }
-.tz_digital{
+.tz_digital {
   color: var(--main-bg);
   font-family: var(--num-digits);
 }
