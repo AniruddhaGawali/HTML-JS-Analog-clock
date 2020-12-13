@@ -98,3 +98,34 @@ setInterval(() => {
   set_time(tz_time(-5), 1, "NEW YORK");
   set_time(tz_time(9), 2, "JAPAN");
 }, 1000);
+
+theme_no=0
+
+function theme1() {
+  if (theme_no == 0) {
+    theme_no = 1;
+    document.documentElement.style.setProperty("--main-bg", "black");
+    document.documentElement.style.setProperty("--main-bg2", "white");
+    document.getElementById("clock").id = "clock_dark";
+    
+    document.getElementById("tz-c1").className = "timezone-clock_dark";
+    document.getElementById("tz-c2").className = "timezone-clock_dark";
+    document.getElementById("tz-c3").className = "timezone-clock_dark";
+    
+    document.getElementById("theme").src="https://i.ibb.co/QFpDYhr/theme-l.png"
+    document.getElementById("menu-icon").src="https://i.ibb.co/Nrj2xtD/list-l.png"
+  } else {
+    theme_no = 0;
+    document.documentElement.style.setProperty("--main-bg", "white");
+    document.documentElement.style.setProperty("--main-bg2", "black");
+    document.getElementById("clock_dark").id = "clock";
+    
+    document.getElementById("tz-c1").className = "timezone-clock";
+    document.getElementById("tz-c2").className = "timezone-clock";
+    document.getElementById("tz-c3").className = "timezone-clock";
+    
+    document.getElementById("theme").src="https://i.ibb.co/zrK9B08/theme-d.png"
+    document.getElementById("menu-icon").src="https://i.ibb.co/6sfZNJR/list-d.png"
+    
+  }
+}

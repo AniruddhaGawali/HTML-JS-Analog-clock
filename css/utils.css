@@ -1,15 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 :root {
   --title: "Langar", cursive;
+  --title2: 'Righteous', cursive;
   --num-digits: "Nova Square", cursive;
   --general: "Source Sans Pro", sans-serif;
   /* --main-bg:black; */
   --main-bg: white;
   --main-bg2: black;
 }
+
+::selection {
+  background:#333;
+  color:white;
+  }
 
 * {
   padding: 0;
@@ -33,6 +40,7 @@ body {
 
 .nav {
   background-color: var(--main-bg);
+  margin-bottom: 10px;
 }
 
 .nav a {
@@ -108,21 +116,6 @@ body {
 
 /* /------------------------------------------------------- */
 
-#stopwatch {
-  position: relative;
-  margin: auto;
-  background: url(./clock.png) no-repeat;
-  width: 20vw;
-  height: 20vw;
-  /* width: 500px;
-  height: 500px; */
-  background-size: contain;
-}
-
-.other-watch {
-  justify-content: center;
-  text-align: center;
-}
 
 .btn {
   margin: 20px;
@@ -130,41 +123,21 @@ body {
   left: 10%;
 }
 
-.btn button {
+.btn {
   margin: 0 20px;
   padding: 10px;
   border-radius: 12vw;
+  background-color: transparent;
+  color: var(--main-bg);
+  border: 3px solid var(--main-bg);
 }
 
-#stopwatch_hand {
-  position: absolute;
-  border-radius: 20vw;
-  transform-origin: bottom;
-  background-color: red;
-  height: 42%;
-  width: 1.5%;
-  top: 8%;
-  left: 49.1%;
-  opacity: 0.8;
+.btn:disabled{
+  color: gray;
+  border: 2px solid grey;
+
 }
-#counter {
-  position: absolute;
-  border-radius: 1vw;
-  transform-origin: bottom;
-  background: grey;
-  height: 17%;
-  width: 42%;
-  top: 63.02%;
-  left: 28.699%;
-  opacity: 0.8;
-}
-#counter h1 {
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  padding-top: 0.85vw;
-  font-size: 1.4em;
-}
+
 
 .hr_ {
   border: 2.5px solid var(--main-bg);

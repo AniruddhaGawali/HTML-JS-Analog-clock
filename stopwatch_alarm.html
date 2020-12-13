@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/stopwatch_alarm.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/Time_Management-512.png"
+      type="image/x-icon"
+    />
+
+    <title>AKG Clock | Alarm</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="main-navbar">
+        <div class="home">
+          <a href="./index.html">
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/Time_Management-512.png"
+              alt="LOGO"
+            />
+          </a>
+          <a href="./index.html"><h1>AKG CLOCK</h1></a>
+        </div>
+        <div class="menu">
+          <img
+            src="https://i.ibb.co/zrK9B08/theme-d.png"
+            alt="Theme"
+            onclick="theme2()"
+            id="theme"
+          />
+          <img
+            src="https://i.ibb.co/6sfZNJR/list-d.png"
+            alt="Menu"
+            onclick="menu()"
+            id="menu-icon"
+          />
+        </div>
+      </div>
+      <div id="menu-list">
+        <ul>
+          <li>
+            <a href="./stopwatch_alarm.html"><b> Stopwatch And Alarm </b></a>
+          </li>
+          <li>
+            <a href="#"><b> Menu1 </b></a>
+          </li>
+          <li>
+            <a href="#"><b> Menu1 </b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="heading"><h1>STOP-WATCH</h1></div>
+    <div class="hr_2"></div>
+    <br><br>
+    <div class="clock-content">
+      <div class="content-left">
+        <div id="clock">
+          <div id="second"></div>
+        </div>
+        <div class="button">
+          <button class="btn" type="submit" onclick="stopwatch_start()">
+            <b> Start</b>
+          </button>
+          <button class="btn" type="submit" onclick="stopwatch_lap()"><b> Lap</b></button>
+          <button class="btn" type="submit" onclick="stopwatch_stop()">
+            <b> Stop</b>
+          </button>
+          <button class="btn" type="submit" onclick="stopwatch_reset()"><b>Reset</b> </button>
+        </div>
+      </div>
+      <div class="content-right">
+          <div class="digital">
+            <h1 id="digital_timer">00:00:00</h1>
+          </div>
+          <div class="lap-box">
+            <ul id="lap">
+            </ul>
+          </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/stopwatch_alarm.js"></script>
+  </body>
+</html>

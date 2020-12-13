@@ -1,0 +1,109 @@
+#heading{
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  font-family: var(--title2);
+  font-size: 2em;
+  color: var(--main-bg);
+}
+
+.clock-content {
+  justify-content: center;
+}
+
+#clock {
+  /* margin: 10px; */
+  padding: 0px;
+  position: relative;
+  margin: auto;
+  background: url(../img/stopwatch_d.png) no-repeat;
+  width: 35vw;
+  height: 35vw;
+  background-size: contain;
+  /* background-color: yellow; */
+}
+#clock_dark {
+  position: relative;
+  margin: auto;
+  background: url(../img/stopwatch_l.png) no-repeat;
+  width: 35vw;
+  height: 35vw;
+  background-size: contain;
+  /* background-color: yellow; */
+}
+
+#second {
+  position: absolute;
+  transform-origin: bottom;
+}
+
+#second {
+  border-radius: 20vw;
+  background-color: var(--main-bg);
+  height: 42%;
+  width: 2%;
+  top: 8%;
+  left: 29.7%;
+  opacity: 0.8;
+  /* display: none; */
+}
+
+.clock-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.clock-content div {
+  justify-content: center;
+  align-items: center;
+  margin: 0 6.5vw;
+}
+
+.content-left {
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.content-right {
+  background-color: var(--main-bg);
+  justify-content: center;
+  align-items: center;
+  height: 30vw;
+  width: 50vw;
+  border-radius: 12px;
+}
+
+.digital {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#digital_timer {
+  margin: 20px 0px;
+  font-family: var(--num-digits);
+  font-size: 3em;
+  color: var(--main-bg2);
+}
+
+.lap-box {
+  height: 20vw;
+  width: 20vw;
+  /* background-color: red; */
+  overflow: scroll;
+  justify-content: center;
+  text-align: center;
+}
+.lap-box ul {
+  list-style: none;
+}
+.lap-box ul li {
+  color: var(--main-bg2);
+  font-family: var(--general);
+  font-size: 1.5em;
+}
