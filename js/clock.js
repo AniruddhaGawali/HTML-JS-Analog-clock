@@ -7,6 +7,7 @@ function locaL_time() {
     time.getDay(),
     time.getDate(),
     time.getMonth(),
+    time.getMilliseconds()
   ];
 
   return time;
@@ -23,6 +24,7 @@ function tz_time(offset) {
     nd.getDay(),
     nd.getDate(),
     nd.getMonth(),
+    nd.getMilliseconds()
   ];
 
   return time;
@@ -31,9 +33,9 @@ function tz_time(offset) {
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 function set_time(time, pos, city) {
-  let hrot = 30 * time[0] + time[1] / 2 + time[2] / 120;
-  let mrot = 6 * time[1] + time[2] / 10;
-  let srot = time[2] * 6;
+  let hrot = 30 * time[0] + time[1] / 2 + time[2] / 120 + time[6]/120000;
+  let mrot = 6 * time[1] + time[2] / 10 + time[6]/10000;
+  let srot = time[2] * 6 ;
 
   var months = [
     "January",
