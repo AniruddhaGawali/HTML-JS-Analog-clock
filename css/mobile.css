@@ -2,7 +2,6 @@
   .navigation {
     flex-direction: column;
   }
-
   .clock-content {
     display: flex;
     flex-direction: column;
@@ -22,3 +21,5 @@
     font-family: var(--num-digits);
   }
 }
+
+
