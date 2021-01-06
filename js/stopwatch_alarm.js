@@ -128,3 +128,16 @@ function setAlarm(e) {
         }, timeToAlarm);
       }
 }
+
+
+const userPrefersDark =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const userPrefersLight =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: light)").matches;
+
+if (userPrefersDark) {
+  theme2();
+}

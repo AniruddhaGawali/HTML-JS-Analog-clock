@@ -129,3 +129,15 @@ function theme1() {
     
   }
 }
+
+const userPrefersDark =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const userPrefersLight =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: light)").matches;
+
+if (userPrefersDark) {
+  theme1();
+}
